@@ -4,7 +4,10 @@ body {
   line-height: 1.8em;
   color: #3d3d50;
   font-weight: 300;
-  background: url("../img/pattern-bg.png") fixed;
+  background-color: #E8E8E8;
+  background: url(../img/bg-lake.jpg);
+  background-size: cover;
+	background-attachment: fixed;
 }
 h1,
 h2,
@@ -134,7 +137,6 @@ h1, h2, h3, h4, h5 {
   flex-direction: row;
   margin: 60px auto;
   padding: 0;
-  box-shadow: 0 0 0 1px #eaeaea;
 }
 .blocks {
   box-sizing: border-box;
@@ -144,14 +146,13 @@ h1, h2, h3, h4, h5 {
   -webkit-flex: 1 0 0;
   flex: 1 0 0;
   position: relative;
-  background: #1a1a1a;
-  border-right: 1px solid #eaeaea;
+  background: rgba(26, 26, 26, 0.95);
 }
 .right-col-block {
   -webkit-flex: 2 0 0;
   flex: 2 0 0;
   position: relative;
-  background: #ffffff;
+  background: rgba(255,255,255,0.8);
 }
 @media (max-width: 768px) {
   .columns-block {
@@ -176,9 +177,24 @@ h1, h2, h3, h4, h5 {
       margin-bottom: 30px;
   }
 }
+
 .gray-bg {
   background-color: #ffffff;
 }
+
+.yellow-bg {
+	background-color: rgba(204, 186, 134, 0.73);
+}
+
+.white-text h1,
+.white-text h2,
+.white-text h3,
+.white-text h4,
+.white-text h5 {
+	color: #FFF!important;
+}
+
+
 #main-wrapper {
   overflow: hidden;
 }
@@ -221,15 +237,33 @@ h1, h2, h3, h4, h5 {
   position: relative;
 }
 .header .profile-img {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+.profile-img img {
+	padding: 5px;
+	background-color: #FFF;
+	box-shadow:  0 3px 6px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-transform: rotate(-2deg);
+	-webkit-transition: -webkit-transform .15s linear;
+	transform: rotate(-10deg);
+	max-width: 300px;
+	margin-top: -40px;
+	margin-left: -40px;
 }
 .header .content-wrapper {}.header .content {
   width: 100%;
   margin: 0 auto;
 }
 .header .content h1 {
-  line-height: 1;
-  margin: 0 0 5px;
+	line-height: 1;
+	margin: 0 0 5px;
+	font-size: 46px;
+	color: #FFF;
+	font-weight: normal;
+	letter-spacing: -1px;
 }
 .header .content .lead {
   font-size: 18px;
@@ -284,13 +318,18 @@ h1, h2, h3, h4, h5 {
 .social-icon li a:hover {
   border-color: #cccccc;
 }
+
 .expertise-item {
   margin-bottom: 20px;
+  position: relative;
 }
+
 .expertise-item h3 {
   margin-bottom: 5px;
   font-weight: 700;
 }
+
+
 .portfolio-item {
   position: relative;
   display: block;
@@ -342,7 +381,7 @@ h1, h2, h3, h4, h5 {
   color: #888888;
 }
 .feedback-form {
-  margin-top: 50px;
+
 }
 .form-control {
   height: 50px;
@@ -363,7 +402,7 @@ h1, h2, h3, h4, h5 {
   padding: 30px 50px;
 }
 .footer .copyright-section {
-  font-size: 13px;
+  font-size: 15px;
   color: #888888;
 }
 .footer .copyright-section .copytext {
@@ -468,4 +507,33 @@ h1, h2, h3, h4, h5 {
   top: 50%;
   right: -1px;
   margin-top: -7px;
+}
+
+.line-font {
+	color: #b97575;
+	font-size: 60px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.marginbottom-30 {
+	margin-bottom: 30px;
+}
+
+.social li{display:inline-block;text-align:center}
+.social li i{display:block}
+.social li i{font-size:22px;color:#fff;border-radius:3px;background:#ddd;margin:5px;width:45px;height:45px;line-height:45px;transition:all .2s ease-out}
+.social li .icon:hover{background:#3b475f}
+.social .ion-social-twitter-outline{background:#00aced}
+.social .ion-social-facebook{background:#3b5998}
+.social .ion-social-googleplus-outline{background:#dd4b39}
+.social .ion-social-linkedin-outline{background:#007bb6}
+.social .ion-social-github-outline{background:#bc4444}
+
+.intro {
+	height: 60vh;
+	background-color: #1a1a1a;
+	background: url(../img/bg-book.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
 }
