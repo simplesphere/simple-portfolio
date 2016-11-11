@@ -221,15 +221,14 @@ h1, h2, h3, h4, h5 {
   padding-left: 40px;
 }
 .section-title h2:before {
-	content: '';
-	color: red;
-	margin-right: 30px;
-	width: 25px;
-	height: 3px;
-	background-color: #1a1a1a;
-	position: absolute;
-	left: 0;
-	top: 40%;
+  content: '';
+  margin-right: 30px;
+  width: 25px;
+  height: 10px;
+  background-color: #bbba86;
+  position: absolute;
+  left: 0;
+  top: 40%;
 }
 .header {
   padding: 20px!important;
@@ -253,6 +252,25 @@ h1, h2, h3, h4, h5 {
 	margin-top: -40px;
 	margin-left: -40px;
 }
+
+.img-sidebar {
+	padding: 5px;
+	background-color: #FFF;
+	box-shadow:  0 3px 6px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-transition: -webkit-transform .15s linear;
+	transform: rotate(5deg);
+	max-width: 320px;
+	margin-top: -60px;
+	margin-bottom: 30px;
+}
+
+.display-none {
+	display: none;
+}
+
+
 .header .content-wrapper {}.header .content {
   width: 100%;
   margin: 0 auto;
@@ -267,6 +285,9 @@ h1, h2, h3, h4, h5 {
 }
 .header .content .lead {
   font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
 }
 .header .content .about-text {
   margin: 10px 0;
@@ -294,29 +315,6 @@ h1, h2, h3, h4, h5 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-.social-icon {
-  margin: 20px 0;
-  padding: 0;
-  display: block;
-}
-.social-icon li {
-  display: inline-block;
-  margin: 0 2px;
-}
-.social-icon li a {
-  display: block;
-  font-size: 12px;
-  color: #333333;
-  width: 34px;
-  height: 34px;
-  line-height: 33px;
-  text-align: center;
-  border-radius: 2px;
-  border: 2px solid #eeeeee;
-}
-.social-icon li a:hover {
-  border-color: #cccccc;
 }
 
 .expertise-item {
@@ -522,7 +520,7 @@ h1, h2, h3, h4, h5 {
 
 .social li{display:inline-block;text-align:center}
 .social li i{display:block}
-.social li i{font-size:22px;color:#fff;border-radius:3px;background:#ddd;margin:5px;width:45px;height:45px;line-height:45px;transition:all .2s ease-out}
+.social li i{font-size:22px;color:#fff;border-radius:3px;background:#ddd;margin:5px;width:45px;height:45px;line-height:50px;transition:all .2s ease-out}
 .social li .icon:hover{background:#3b475f}
 .social .ion-social-twitter-outline{background:#00aced}
 .social .ion-social-facebook{background:#3b5998}
@@ -531,9 +529,84 @@ h1, h2, h3, h4, h5 {
 .social .ion-social-github-outline{background:#bc4444}
 
 .intro {
-	height: 60vh;
 	background-color: #1a1a1a;
-	background: url(../img/bg-book.jpg);
-	-webkit-background-size: cover;
-	background-size: cover;
+	background: url(../img/bg-book.jpg) center top;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.intro-text {
+  padding: 150px 0;
+}
+
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+.typewriter {
+  font-size: 55px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  position: relative;
+  line-height: 65px;
+  color: #FFF;
+  text-shadow: 2px 2px 5px rgba(255,255,255,0.1);
+  font-family: "Playfair Display", Georgia;
+  text-align: center;
+}
+
+.typewriter span {
+  font-size: 40px;
+}
+
+.home-intro {
+  font-size: 30px;
+  font-family: 'Sacramento', cursive, Georgia;
+  color: #FFF;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(187, 186, 134, 0.65);
+}
+
+.zindex-2 {
+  z-index: 2;
+  position: relative;
+}
+
+.yellow {
+  color: #bbba86;
 }
