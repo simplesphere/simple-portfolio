@@ -48,7 +48,7 @@ h6 {
   line-height: 1.5em;
 }
 a {
-  color: #FFC107;
+  color: #bbba86;
   text-decoration: none;
   transition: all 0.3s ease 0s;
 }
@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5 {
   -webkit-flex: 1 0 0;
   flex: 1 0 0;
   position: relative;
-  background: rgba(26, 26, 26, 0.95);
+  background: rgba(55, 50, 47, 0.9);
 }
 .right-col-block {
   -webkit-flex: 2 0 0;
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .yellow-bg {
-	background-color: rgba(204, 186, 134, 0.73);
+	background-color: #37322f;
 }
 
 .white-text h1,
@@ -278,7 +278,7 @@ h1, h2, h3, h4, h5 {
 .header .content h1 {
 	line-height: 1;
 	margin: 0 0 5px;
-	font-size: 46px;
+	font-size: 38px;
 	color: #FFF;
 	font-weight: normal;
 	letter-spacing: -1px;
@@ -441,13 +441,6 @@ h1, h2, h3, h4, h5 {
   top: 65%;
 }
 
-@media (min-width: 1200px) {
-	.container {
-	  width: 80%;
-	} 
-}
-
-
 
 /*------------------------------------------------------------------
 [Progress Bars]
@@ -609,4 +602,49 @@ h1, h2, h3, h4, h5 {
 
 .yellow {
   color: #bbba86;
+}
+
+.section-education p {
+  color: rgba(255,255,255,0.8);
+}
+
+.section-education .content-item {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.section-education .content-item:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+
+.projects {
+}
+
+.projects li {
+  clear: both;
+  display: block;
+  padding: 5px 0;    
+  padding-left: 15px;
+  position: relative;
+}
+
+.projects li:before {
+  display: inline-block;
+  text-align: center;
+  font-family: Ionicons;
+  content: "\f125";
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  font-size: 10px;
+  transition: all 0.3s ease-in;
+  color: #37322f;
+}
+
+.projects li strong {
+  float: right;
+}
+
+.portfolio-section a {
+  color: #bc7d7e;
 }
